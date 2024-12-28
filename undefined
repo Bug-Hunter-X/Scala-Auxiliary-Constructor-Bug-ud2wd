@@ -1,0 +1,16 @@
+```scala
+class MyClassSolution(val x: Int) {
+  //Added logging
+  println("Primary constructor called with x = " + x)
+  def this() { 
+    this(0) 
+  }
+}
+
+object Main extends App{
+  val instance1 = new MyClassSolution(5)
+  val instance2 = new MyClassSolution()
+  println(instance1.x) // Output: 5
+  println(instance2.x) // Output: 0
+}
+```
